@@ -30,7 +30,7 @@ export default function Success({ customerName, products }: SuccessProps) {
     products.forEach((product) => {
       removeFromCart(product.id)
     })
-  })
+  }, [])
 
   return (
     <>
@@ -65,7 +65,7 @@ export default function Success({ customerName, products }: SuccessProps) {
           </strong>{' '}
           já está a caminho da sua casa.{' '}
         </p>
-        <Link href={'/'}>Voltar ao catálogo</Link>
+        <Link href={''}>Voltar ao catálogo</Link>
       </SuccessContainer>
     </>
   )
